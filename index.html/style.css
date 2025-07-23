@@ -1,596 +1,451 @@
-* {
-    margin: 0px;
-    padding: 0px;
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
 }
+
+
 html, body{
     background: rgb(6,7,77);
     background: radial-gradient(circle, rgba(4,6,51,1) 37%, rgba(1,2,14,1) 100%);
     color: white;
 }
 
-.navbar{
-    background-color: #141538;
+
+/*Navbar Content*/
+#navbar{
+     background-color: #141538;
     height: 45px;
     width: 100%;
     font-size: 30px;
     font-weight: 600;
+    font-style: italic;
     display: inline-block;
-    Text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-style: italic;
 }
 
-.nav-logo{
-    margin: 0 400px 0px 150px;
-    display: inline-block;
+.logo{
+    margin: 0 300px 0 150px;
+    padding: 3px;
+    border-radius: 10px;
+   
 }
-.nav-logo:hover{
+
+#navbar a{
+    text-decoration:none;
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.logo:hover, #navbar a:hover{
     border-radius: 10px;
     padding: 3px;
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 60px #0ef;
+}
+
+/* Home Content */
+section{
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#homeContent{
+    width: 50%;
+}
+
+#profilePhoto{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-image: url("homeLogo.jpg");
+    background-position: center;
+    border: 5px solid #0ef;
+    box-shadow: 0 0 60px #0ef;
+}
+
+#home h1{
+        font-size: 34px;
+        font-weight: 600;
+    }
+#home h3{
+    font-size: 29px;
+    font-weight: 400;
+}
+
+#homeIcons{
+        font-size: 30px;
+        color: white;
+    }
+    
+#facebook, #whatsapp, #instagram{
+    border: 1.5px solid white;
+    background: #0ef;
+    border-radius: 8px;
+}
+#facebook:hover, #whatsapp:hover, #instagram:hover{
     background: #0ef;
     color: #081b29;
     box-shadow: 0 0 30px #0ef;
 }
 
-.navbar a {
-    display: inline-block;
+.btn-box{
     text-decoration: none;
+    font-size: 20px;
     color: white;
-    justify-content: inline-block;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 3px;
+    padding: 1px 5px 1px 5px;
+    background-color: rgb(9, 90, 104);
+    border-radius: 5px;
 }
-.navbar a:hover {
-    border-radius: 10px;
-    padding: 3px;
+.btn-box:hover{
     background: #0ef;
     color: #081b29;
-    box-shadow: 0 0 50px #0ef;
+    box-shadow: 0 0 30px #0ef;
 }
 
-/*Home
-    Content*/
 
-    #home{
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        display: inline-block;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 0px 100px 0px 100px;
-    }
-    #home-contentLeft{
-        display: inline-block;
-        width: 60%;
-        margin: 0 30px 0 0;
+/*About Content*/
+#photo{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-image: url("homeLogo1.jpg");
+    background-position: center;
+    border: 5px solid #0ef;
+    box-shadow: 0 0 60px #0ef;
+    margin: 0 100px 0 100px;
+}
 
-    }
-    #home h1{
-        font-size: 34px;
-        font-weight: 600;
-    }
-    #home h3{
-        font-size: 29px;
-        font-weight: 400;
-    }
-    #home img{
-        text-align: right;
-    }
-    #profilePhoto img{
-        height: 70%;
-        width: 70%;
-        border: 5px solid #0ef;
-        border-radius: 50%;
-        display: inline-block;
-        box-shadow: 0 0 60px #0ef;
-    }
-    #homeIcons{
-        font-size: 30px;
-        color: white;
-    }
+
+#aboutMe{
+    width: 50%;
+    margin: 0px 100px 0px 50px;
     
-    #facebook{
-        border: 1.5px solid white;
-        background: #0ef;
-        border-radius: 8px;
-    }
-    #facebook:hover{
-        background: #0ef;
-        color: #081b29;
-        box-shadow: 0 0 30px #0ef;
-    }
+}
 
-    #whatsapp{
-        border: 1.5px solid white;
-        background: #0ef;
-        border-radius: 8px;
-    }
-    #whatsapp:hover{
-        background: #0ef;
-        color: #081b29;
-        box-shadow: 0 0 30px #0ef;
-    }
-
-    #instagram{
-        border: 1.5px solid white;
-        background: #0ef;
-        border-radius: 8px;
-    }
-    #instagram:hover{
-        background: #0ef;
-        color: #081b29;
-       
-        box-shadow: 0 0 30px #0ef;
-    }
-    .btn-box{
-        text-decoration: none;
-        font-size: 20px;
-        color: white;
-        padding: 1px 5px 1px 5px;
-        background-color: rgb(9, 90, 104);
-        border-radius: 5px;
-    }
-    .btn-box:hover{
-        background: #0ef;
-        color: #081b29;
-        box-shadow: 0 0 30px #0ef;
-    }
+#about h1{
+    font-size: 34px;
+    font-weight:600;
+}
+#about h3{
+    font-size: 29px;
+    font-weight: 400;
+}
 
 
-/*About
-    Content*/
-    #about{
-        height: 100vh;
-        width: 100%;
-        position: relative; 
-        display: inline-block;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 0px 100px 0px 100px;
-    }
-    #photo img{
-        height: 60%;
-        width: 60%;
-        border: 3px solid #0ef;
-        box-shadow: 0 0 50px #0ef;
-        border-radius: 50%;
-    }
-    #aboutMe{
-        padding: 0px 100px 0px 50px;
-        width: 95%;
-    }
-    #about h1{
-        font-size: 34px;
-        font-weight:600;
-    }
-    #about h3{
-        font-size: 29px;
-        font-weight: 400;
-    }
+/*Services Content*/
+#service{
+    height: 100vh;
+    width:100%; 
+}
+#service h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+#serviceContent{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#webDesign,#dataEntry, #programming{
+    height: 220px;
+    width: 350px;
+    border: 1.5px solid #0ef;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 0 15px #0ef;
+    padding: 10px;
+}
 
 
-/* Services 
-        Content*/
-    .services{
-        height: 100vh;
-        width: 100%;
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: center;
-        padding: 0px 200px 0px 200px;
-    }
-    .services h1{
-        font-size: 50px;
-        text-align: center;
-        text-decoration: underline;
-    }
-    #services h2{
-        font-size: 34px;
-        text-align: center;
-        text-decoration: underline;
-    }
-    #services a{
-        width: 150%;
-        border: 1.5ps solid #0ef;
-        border-radius: 8px;
-        box-shadow: 0 0 15px #0ef;
-        text-decoration: none;
-        color: white;
-        background-color: rgb(9, 90, 104);
-        font-size: 21px;
-    }
-    #services a:hover{
-        background: #0ef;
-        color: #081b29;
-        box-shadow: 0 0 30px #0ef;
-    }
-    #services div{
-        display: inline-block;
-    }
-    #webDesign{
-        height: 220px;
-        width: 350px;
-        border: 1.5px solid #0ef;
-        border-radius: 5px;
-        margin: 5px;
-        box-shadow: 0 0 15px #0ef;
-        padding: 10px;
-    }
-    #dataEntry{
-        height: 220px;
-        width: 350px;
-        border: 1.5px solid #0ef;
-        border-radius: 5px;
-        margin: 5px;
-        box-shadow: 0 0 15px #0ef;
-        padding: 10px;
-    }
-    #programming{
-        height: 220px;
-        width: 350px;
-        border: 1.5px solid #0ef;
-        border-radius: 5px;
-        margin: 5px;
-        box-shadow: 0 0 15px #0ef;
-        padding: 10px;
-    }
-
-
-    /* Skills
-        Content*/
+/*skills content*/
+#skill{
+    height: 100vh;
     
+}
+#skill h2{
+    font-size: 32px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+}
 
-    #skillsabcd{
-        height: 100vh;
-        width: 100%;
+#skill123{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+#techSkill{
+    width: 38%;
+}
+#techSkill h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+.skillBar{
+    height: 15px;
+    width: 100%;
+    background-color: gray;
+    border: 1px solid white;
+    overflow: hidden;
+    border-radius: 35px;
+}
+.skillLevel{
+    height: 100%;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 15px;
+    color: #081b29;
+    background-color: blue;
+    border-radius: 25px;
+}
+.html{
+    width: 90%;
+    background-color: #0ef;
+    animation: fillBarh .25s forwards;
+
+}
+@keyframes fillBarh {
+    0%{
+        width: 0;
     }
-    
-    #skillh1{
-        
-        text-align: center;
-        font-size: 50px;
-        font-weight: 600;
-        text-decoration: underline;
-    }
-    
-    .skills123{
-        
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        display: inline-block;
-        display: flex;
-        align-content: center;
-        
-      
-        padding: 0px 100px 0px 100px;
-        
-        
-    }
-    
-    #skillsContent{
-        width: 50%; 
-        display: block;
-        margin-right: 100px;
-        
-        
-    }
-    #skillsContent h2{
-        text-align: center;
-        font-size: 28px;
-        font-weight: 500;
-        text-decoration: underline;
-    }
-    
-    #skillsContent h3{
-        text-align: left;
-    }
-    #skills123 div{
-        align-items: center;
-        padding: 0px 100px 0px 100px;
-    }                
-    .container11 {
+    100%{
         width: 90%;
-        background-color: gray;
-        color: #081b29;
-        height: 15px;
-        border-radius: 10px;
-      }
-    .container11:hover{
-        box-shadow: 0 0 30px #0ef;
     }
-    
-      
-    .html {
-        height: 15px;
-        width: 90%;
-        background-color: #0ef;
-        text-align: right;
-        height: 15px;
-        border-radius: 10px;
+}
+
+.css{
+    width: 80%;
+    background-color: #0ef;
+    animation: fillBarcss .5s forwards;
+
+}
+@keyframes fillBarcss {
+    0%{
+        width: 0;
     }
-    .css {
-        height: 15px;
+    100%{
         width: 80%;
-        background-color: #0ef;
-        text-align: right;
-        height: 15px;
-        border-radius: 10px;
     }
-    .JavaScript {
-        height: 15px;
-        width: 65%; 
-        background-color: #0ef;
-        text-align: right;
-        height: 15px;
-        border-radius: 10px;
-    } 
-    .C {
-        height: 15px;
+}
+
+.js{
+    width: 60%;
+    background-color: #0ef;
+    animation: fillBarjs .75s forwards;
+
+}
+@keyframes fillBarjs {
+    0%{
+        width: 0;
+    }
+    100%{
         width: 60%;
-        background-color: #0ef;
-        text-align: right;
-        height: 15px;
-        border-radius: 10px;
-    } 
-    .Cpp {
-        height: 15px;
-        width: 60%; 
-        background-color: #0ef;
-        text-align: right;
-        height: 15px;
-        border-radius: 10px;
-    } 
+    }
+}
 
+.c{
+    width: 50%;
+    background-color: #0ef;
+    animation: fillBarc 1s forwards;
 
-    /*radial 
-        Skills*/
+}
+@keyframes fillBarc {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
 
-    
-        .container12 {
-            text-align: right;
-            margin-left: 125px;
-           }
-           
-          
-           .skills-container {
-            display: grid;
-            grid-template-columns: repeat(2, 150px);
-            gap: 50px;
-            margin-top: 50px;
-           }
+.cpp{
+    width: 50%;
+    background-color: #0ef;
+    animation: fillBarcpp 1.5s forwards;
 
-        .container12 h2{
-            text-align: center;
-            font-size: 28px;
-            font-weight: 500;
-            text-decoration: underline;
-        }
-           
-          
-           .skill {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-           }
-           
-          
-           .circle {
-            position: relative;
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           }
-
-           .circle:hover{
-            box-shadow: 0 0 30px #0ef;
-           }
-           
-          
-           .circle::before {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            background: rgb(6,7,77);
-            background: radial-gradient(circle, rgba(6,7,77,1) 37%, rgba(1,2,14,1) 100%);
-            border-radius: 50%;
-           }
-           
-          
-           .circle span {
-            position: relative;
-            font-size: 1.5em;
-            font-weight: 600;
-           }
-           
-          
-           .skill p {
-            margin-top: 10px;
-            font-weight: 500;
-           }
+}
+@keyframes fillBarcpp {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+.skillBar:hover{
+    box-shadow: 0 0 30px #0ef;
+}
 
 
 
 
-    /*latest
-           project*/
-        #project11{
-            height: 100vh;
-            width: 100%;
-            position: relative;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            padding: 0px 200px 0px 200px;
-        }
-        #project11 h1{
-            font-size: 50px;
-            text-align: center;
-        }
-        #project h2{
-            font-size: 50px;
-            text-align: center;
-            text-decoration: underline;
-        }
-        #project a{
-            width: 150%;
-            border: 1.5ps solid #0ef;
-            border-radius: 8px;
-            box-shadow: 0 0 15px #0ef;
-            text-decoration: none;
-            color: white;
-            background-color: rgb(9, 90, 104);
-            font-size: 21px;
-        }
-        #project a:hover{
-            background: #0ef;
-            color: #081b29;
-            box-shadow: 0 0 30px #0ef;
-        }
-        #project div{
-            display: inline-block;
-        }
-        #box1{
-            height: 250px;
-            width: 350px;
-            border: 1.5px solid #0ef;
-            border-radius: 5px;
-            margin: 5px;
-            box-shadow: 0 0 15px #0ef;
-            padding: 10px;
-        }
-        #box2{
-            height: 250px;
-            width: 350px;
-            border: 1.5px solid #0ef;
-            border-radius: 5px;
-            margin: 5px;
-            box-shadow: 0 0 15px #0ef;
-            padding: 10px;
-        }
-        #box3{
-            height: 250px;
-            width: 350px;
-            border: 1.5px solid #0ef;
-            border-radius: 5px;
-            margin: 5px;
-            box-shadow: 0 0 15px #0ef;
-            padding: 10px;
-        }
+
+
+ 
+ .container12 {
+    text-align: right;
+}
+
+
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.container12 h3{
+    text-align:center;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-top:90px;
+}
+
+
+.skill123{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px 0 100px;
+}
+
+
+.circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle:hover{
+    box-shadow: 0 0 30px #0ef;
+}
+
+
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: rgb(6,7,77);
+    background: radial-gradient(circle, rgba(6,7,77,1) 37%, rgba(1,2,14,1) 100%);
+    border-radius: 50%;
+}
+
+
+.circle span {
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.skill p {
+    margin-top: 10px;
+    font-weight: 500;
+}
 
 
 
-        /* Contact
-            Content*/
-            .contact{
-                height: 100vh;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                padding: 0px 100px 0px 100px;
-        }
-        #contact{
-            width: 70%;
-        }
+
+
+
+
+
+/*projects content*/
+#project{
+    height: 100vh;
+    width:100%; 
+}
+#project h1{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+#projectContent{
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#box{
+    height: 250px;
+    width: 350px;
+    border: 1.5px solid #0ef;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0 0 15px #0ef;
+    padding: 10px;
+ }
+
+
+/*Contact Content*/
+#contact{
+        width: 70%;
+}
         
-        #contacth1{
-            text-align: center;
-            font-size: 50px;
-            font-weight: 600;
-            text-decoration: underline;
-        }
+#contacth1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    text-decoration: underline;
+}
         
-        #contacth2{
-            font-size: 34px;
-            font-weight: 500;
-        }
-        
-        #homeIcons123{
-            font-size: 30px;
-            color: white;
-        }
-        
-        #facebook{
-            border: 1.5px solid white;
-            background: #0ef;
-            border-radius: 8px;
-        }
-        #facebook:hover{
-            background: #0ef;
-            color: #081b29;
-            box-shadow: 0 0 30px #0ef;
-        }
-        
-        #whatsapp{
-            border: 1.5px solid white;
-            background: #0ef;
-            border-radius: 8px;
-        }
-        #whatsapp:hover{
-            background: #0ef;
-            color: #081b29;
-            box-shadow: 0 0 30px #0ef;
-        }
-        
-        #instagram{
-            border: 1.5px solid white;
-            background: #0ef;
-            border-radius: 8px;
-        }
-        #instagram:hover{
-            background: #0ef;
-            color: #081b29;
-            box-shadow: 0 0 30px #0ef;
-        }
-        
-        #emailIcons{
-            font-size: 30px;
-            color: blue;
-            border: 1.5px solid white;
-            background: #0ef;
-            border-radius: 8px;
-        }
-        #emailIcons:hover{
-            background: #0ef;
-            color: #081b29;
-            box-shadow: 0 0 30px #0ef;
-        }
-        
-        #email{
-            font-size: 24px;
-            font-weight: 400;
-            text-decoration: none;
-            color: #0ef;
-        }
-        #email:hover{
-            background: #0ef;
-            color: #081b29;
-            box-shadow: 0 0 30px #0ef;
-        }
+#contacth2{
+    font-size: 34px;
+    font-weight: 500;
+}       
+
+#email{
+    border: 1.5px solid white;
+    background: #0ef;
+    border-radius: 8px;
+}
+#email:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 30px #0ef;
+}
+
+
+
+
+
+
+@media only screen and (max-wisth: 480px){
+    body{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 480px;){
+    main #home{
+        display: flex;
+    }
+}
