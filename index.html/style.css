@@ -69,7 +69,9 @@ section{
     width: 400px;
     border-radius: 50%;
     background-image: url("homeLogo.jpg");
+    background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     border: 5px solid #0ef;
     box-shadow: 0 0 60px #0ef;
 }
@@ -449,3 +451,4 @@ section{
         display: flex;
     }
 }
+
